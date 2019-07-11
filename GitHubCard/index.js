@@ -87,14 +87,15 @@ function createCard(data){
   userName.classList.add('username');
 
   profPic.src = data.avatar_url;
-  name.textContent = data.name;
-  userName.textContent = data.login;
-  location.textContent = data.location;
+  name.textContent = `Name: ${data.name}`;
+  userName.textContent = `Username: ${data.login}`;
+  location.textContent = `Location: ${data.location}`;
+  profile.textContent = "Profile: ";
   profLink.textContent = data.html_url;
   profLink.href = data.html_url;
-  followers.textContent = data.followers;
-  following.textContent = data.following;
-  bio.textContent = data.bio;
+  followers.textContent = `Followers: ${data.followers}`;
+  following.textContent = `Following: ${data.following}`;
+  bio.textContent = `Bio: ${data.bio}`;
 
   profile.appendChild(profLink);
 
